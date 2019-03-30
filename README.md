@@ -20,10 +20,10 @@ for Telegram:
 
 working with this project first create your python environment
 
-´´´sh
+```sh
 virtualenv venv -p python3.6
 source venv/bin/activate
 pip install -r reqiurements.txt
 python app.py
-```
+´´´
 
