@@ -28,9 +28,9 @@ def read_data():
         }), 400
 
     try:
-        # call methods here
+        # Notification methods
         send_telegram_notification(email_adress)
-        #send_mail_notification(email_adress)
+        send_mail_notification(email_adress)
         pass
 
     except RuntimeError as error:

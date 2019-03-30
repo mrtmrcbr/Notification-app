@@ -12,9 +12,9 @@ SMTP_LOGIN_PASS = os.getenv("SMTP_LOGIN_PASS")
 
 def send_mail_notification(text):
     msg = EmailMessage()
-    mail_body = f"Pingme için yeni bir kayıt bırakıldı\nIletişime geçmek için;\nEmail Adresi: {text}\n\nTelegram bildirimi olarakta gönderildi."
+    mail_body = f"---- için yeni bir kayıt bırakıldı\nIletişime geçmek için;\nEmail Adresi: {text}\n\nTelegram bildirimi olarakta gönderildi."
     msg.set_content(mail_body)
-    msg['Subject'] = 'New Person for Pingme Product'
+    msg['Subject'] = 'New Person for ---- Product'
     msg['From'] = FROM_MAIL
     msg['To'] = TO_MAIL
     context = ssl.create_default_context()

@@ -3,9 +3,9 @@ import requests
 import urllib
 import os
 
-TELEGRAM_BOT_TOKEN =  os.getenv("TELEGRAM_BOT_TOKEN", "temporary bot token")
+TELEGRAM_BOT_TOKEN =  os.getenv("TELEGRAM_BOT_TOKEN")
 URL = f"https://api.telegram.org/bot{TELEGRAM_BOT_TOKEN}/"
-TELEGRAM_CHAT_ID = os.getenv("TELEGRAM_CHAT_ID","@pingme_network")
+TELEGRAM_CHAT_ID = os.getenv("TELEGRAM_CHAT_ID")
 
 def get_url(url):
     response = requests.get(url)
